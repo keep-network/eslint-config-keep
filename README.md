@@ -8,13 +8,39 @@
 
 ## Usage
 
-Once the `eslint-config-keep` package is installed, you can use it by specifying `eslint-config-keep` in the [`extends`](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) section of your [ESLint configuration](http://eslint.org/docs/user-guide/configuring) in `.eslintrc`:
+### Setting up a project
 
-```js
+ 1. Install the linter and config - `npm i -D eslint https://github.com/keep-network/eslint-config-keep.git`
+ 2. Create your `.eslintrc.json`:
+ ```json
 {
   "extends": "eslint-config-keep",
   "rules": {
     // Additional, per-project rules...
   }
 }
+ ```
+ 3. Add commands for linting to your `package.json`:
+ ```json
+{
+  "scripts": {
+    "js:lint": "eslint ${npm_package_config_eslintPaths}",
+    "js:lint:fix": "eslint --fix ${npm_package_config_eslintPaths}"
+  },
+  "config": {
+    "eslintPaths": "test/ migrations/"
+  },
+}
+```
+
+### Adding a pre-commit hook
+```yaml
+ - repo: local
+   hooks:
+    - id: lint-js
+      name: 'lint js'
+      entry: /usr/bin/env bash -c "npm run js:lint"
+      files: '\.js$'
+      language: script
+      description: "Checks JS code according to the package's linter configuration"
 ```
