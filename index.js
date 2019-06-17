@@ -6,16 +6,6 @@ module.exports = {
   rules: {
     'indent': ['error', 2],
 
-    'max-len': [
-      'error',
-      {
-        'code': 90,
-        'ignoreStrings': true,
-        'ignoreComments': true,
-        'ignoreTemplateLiterals': true,
-      },
-    ],
-
     'new-cap': [
       'error',
       {
