@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   extends: 'google',
@@ -20,7 +20,9 @@ module.exports = {
       'always',
     ],
 
+    'semi': [2, 'never'],
+
     'max-len': 0,
-    'require-jsdoc': 0
+    'require-jsdoc': 0,
   },
-};
+}
