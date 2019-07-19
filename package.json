@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-keep",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "ESLint shareable config for the Keep style",
   "author": "liamzebedee",
   "engines": {
@@ -21,6 +21,7 @@
     "eslint": ">=5.16.0"
   },
   "dependencies": {
-    "eslint-config-google": "^0.13.0"
+    "eslint-config-google": "^0.13.0",
+    "eslint-plugin-no-only-tests": "^2.3.1"
   }
 }

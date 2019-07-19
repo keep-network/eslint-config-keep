@@ -3,6 +3,10 @@
 module.exports = {
   extends: 'google',
 
+  plugins: [
+    'no-only-tests',
+  ],
+
   rules: {
     'indent': ['error', 2],
 
@@ -24,5 +28,7 @@ module.exports = {
 
     'max-len': 0,
     'require-jsdoc': 0,
+
+    'no-only-tests/no-only-tests': 'error',
   },
 }
