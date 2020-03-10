@@ -11,13 +11,13 @@
 ### Setting up a project
 
  1. Install the linter and config - `npm i -D eslint https://github.com/keep-network/eslint-config-keep.git`
- 2. Create your `.eslintrc.json`:
- ```json
+ 2. Create your `.eslintrc`:
+ ```js
 {
   "extends": "eslint-config-keep",
   "rules": {
     // Additional, per-project rules...
-  }
+  },
 }
  ```
  3. Add commands for linting to your `package.json`:
