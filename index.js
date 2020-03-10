@@ -5,6 +5,7 @@ module.exports = {
 
   plugins: [
     'no-only-tests',
+    'prettier',
   ],
 
   rules: {
@@ -30,5 +31,6 @@ module.exports = {
     'require-jsdoc': 0,
 
     'no-only-tests/no-only-tests': 'error',
+    'prettier/prettier': 'error'
   },
 }
