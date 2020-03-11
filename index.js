@@ -6,8 +6,6 @@ module.exports = {
   plugins: ["no-only-tests", "prettier"],
 
   rules: {
-    indent: ["error", 2],
-
     "new-cap": [
       "error",
       {
@@ -15,14 +13,9 @@ module.exports = {
       }
     ],
 
-    "object-curly-spacing": ["error", "always"],
-
-    semi: [2, "never"],
-
-    "max-len": 0,
     "require-jsdoc": 0,
 
     "no-only-tests/no-only-tests": "error",
     "prettier/prettier": ["error", { semi: false }]
-  }
+  },
 }
