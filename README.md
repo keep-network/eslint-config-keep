@@ -30,7 +30,8 @@
 }
 ```
 
-### Adding a pre-commit hook
+### Adding a pre-commit hook using [pre-commit](https://pre-commit.com)
+
 ```yaml
  - repo: local
    hooks:
