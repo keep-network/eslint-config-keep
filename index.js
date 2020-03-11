@@ -17,5 +17,5 @@ module.exports = {
 
     "no-only-tests/no-only-tests": "error",
     "prettier/prettier": ["error", { semi: false }]
-  },
+  }
 }
