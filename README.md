@@ -24,11 +24,8 @@
  ```json
 {
   "scripts": {
-    "lint:js": "eslint ${npm_package_config_eslintPaths}",
-    "lint:js:fix": "eslint --fix ${npm_package_config_eslintPaths}"
-  },
-  "config": {
-    "eslintPaths": "test/ migrations/"
+    "lint:js": "eslint .",
+    "lint:js:fix": "eslint --fix ."
   },
 }
 ```
