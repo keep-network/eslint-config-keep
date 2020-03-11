@@ -1,36 +1,28 @@
-'use strict'
+"use strict"
 
 module.exports = {
-  extends: 'google',
+  extends: ["google", "prettier"],
 
-  plugins: [
-    'no-only-tests',
-    'prettier',
-  ],
+  plugins: ["no-only-tests", "prettier"],
 
   rules: {
-    'indent': ['error', 2],
+    indent: ["error", 2],
 
-    'new-cap': [
-      'error',
+    "new-cap": [
+      "error",
       {
-        'capIsNewExceptions': [
-          'BN',
-        ],
-      },
+        capIsNewExceptions: ["BN"]
+      }
     ],
 
-    'object-curly-spacing': [
-      'error',
-      'always',
-    ],
+    "object-curly-spacing": ["error", "always"],
 
-    'semi': [2, 'never'],
+    semi: [2, "never"],
 
-    'max-len': 0,
-    'require-jsdoc': 0,
+    "max-len": 0,
+    "require-jsdoc": 0,
 
-    'no-only-tests/no-only-tests': 'error',
-    'prettier/prettier': 'error'
-  },
+    "no-only-tests/no-only-tests": "error",
+    "prettier/prettier": ["error", { semi: false }]
+  }
 }
