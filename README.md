@@ -11,29 +11,27 @@
 ### Setting up a project
 
  1. Install the linter and config - `npm i -D eslint https://github.com/keep-network/eslint-config-keep.git`
- 2. Create your `.eslintrc.json`:
- ```json
+ 2. Create your `.eslintrc`:
+ ```js
 {
   "extends": "eslint-config-keep",
   "rules": {
     // Additional, per-project rules...
-  }
+  },
 }
  ```
  3. Add commands for linting to your `package.json`:
  ```json
 {
   "scripts": {
-    "lint:js": "eslint ${npm_package_config_eslintPaths}",
-    "lint:js:fix": "eslint --fix ${npm_package_config_eslintPaths}"
-  },
-  "config": {
-    "eslintPaths": "test/ migrations/"
+    "lint:js": "eslint .",
+    "lint:js:fix": "eslint --fix ."
   },
 }
 ```
 
-### Adding a pre-commit hook
+### Adding a pre-commit hook using [pre-commit](https://pre-commit.com)
+
 ```yaml
  - repo: local
    hooks:
