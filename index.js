@@ -16,6 +16,9 @@ module.exports = {
     "require-jsdoc": 0,
 
     "no-only-tests/no-only-tests": "error",
-    "prettier/prettier": ["error", { semi: false }]
+    "prettier/prettier": [
+      "error",
+      require("@keep-network/prettier-config-keep")
+    ]
   }
 }
