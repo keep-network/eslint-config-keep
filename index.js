@@ -5,6 +5,8 @@ module.exports = {
 
   plugins: ["no-only-tests", "prettier"],
 
+  root: true,
+
   rules: {
     "new-cap": [
       "error",
